@@ -10,7 +10,7 @@ import Foundation
 public struct Base32 {
     public static func encode(data: Data) -> String {
         return data.withUnsafeBytes {
-            return encode(pointer: $0, length: data.count - 1)
+            return encode(pointer: $0, length: data.count)
         }
     }
     
