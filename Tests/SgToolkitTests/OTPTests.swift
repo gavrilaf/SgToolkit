@@ -25,4 +25,8 @@ class OTPTests: XCTestCase {
         XCTAssertEqual("399871", otp.generate(counter: 8))
         XCTAssertEqual("520489", otp.generate(counter: 9))
     }
+    
+    static var allTests = [
+        ("testOTPProvider", testOTPProvider),
+    ]
 }

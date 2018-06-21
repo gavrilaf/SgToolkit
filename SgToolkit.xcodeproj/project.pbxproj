@@ -23,6 +23,8 @@
 /* Begin PBXBuildFile section */
 		460D894A20DB53C500676717 /* OTPProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460D894920DB53C500676717 /* OTPProvider.swift */; };
 		460D894C20DB5C6900676717 /* OTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460D894B20DB5C6900676717 /* OTPTests.swift */; };
+		460D894F20DB92C400676717 /* String+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460D894E20DB92C400676717 /* String+Foundation.swift */; };
+		460D895120DB934600676717 /* StringFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460D895020DB934600676717 /* StringFoundationTests.swift */; };
 		46711D5420DA59670019482E /* String+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46711D5320DA59670019482E /* String+Encoding.swift */; };
 		46F7E45E20D42AE500B57169 /* Base32Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7E45D20D42AE500B57169 /* Base32Tests.swift */; };
 		OBJ_101 /* AEAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AEAD.swift */; };
@@ -135,6 +137,8 @@
 /* Begin PBXFileReference section */
 		460D894920DB53C500676717 /* OTPProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPProvider.swift; sourceTree = "<group>"; };
 		460D894B20DB5C6900676717 /* OTPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTests.swift; sourceTree = "<group>"; };
+		460D894E20DB92C400676717 /* String+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Foundation.swift"; sourceTree = "<group>"; };
+		460D895020DB934600676717 /* StringFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFoundationTests.swift; sourceTree = "<group>"; };
 		46711D5320DA59670019482E /* String+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Encoding.swift"; sourceTree = "<group>"; };
 		46F7E45D20D42AE500B57169 /* Base32Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32Tests.swift; sourceTree = "<group>"; };
 		"CryptoSwift::CryptoSwift::Product" /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,6 +254,14 @@
 			path = OTP;
 			sourceTree = "<group>";
 		};
+		460D894D20DB92A300676717 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				460D894E20DB92C400676717 /* String+Foundation.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		OBJ_12 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +276,7 @@
 				OBJ_15 /* XCTestManifests.swift */,
 				46F7E45D20D42AE500B57169 /* Base32Tests.swift */,
 				460D894B20DB5C6900676717 /* OTPTests.swift */,
+				460D895020DB934600676717 /* StringFoundationTests.swift */,
 			);
 			name = SgToolkitTests;
 			path = Tests/SgToolkitTests;
@@ -416,6 +429,7 @@
 		OBJ_8 /* SgToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				460D894D20DB92A300676717 /* Foundation */,
 				460D894820DB53A700676717 /* OTP */,
 				OBJ_9 /* Encoding */,
 			);
@@ -644,6 +658,7 @@
 				460D894A20DB53C500676717 /* OTPProvider.swift in Sources */,
 				OBJ_180 /* Base32.swift in Sources */,
 				46711D5420DA59670019482E /* String+Encoding.swift in Sources */,
+				460D894F20DB92C400676717 /* String+Foundation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +677,7 @@
 				460D894C20DB5C6900676717 /* OTPTests.swift in Sources */,
 				46F7E45E20D42AE500B57169 /* Base32Tests.swift in Sources */,
 				OBJ_202 /* XCTestManifests.swift in Sources */,
+				460D895120DB934600676717 /* StringFoundationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
