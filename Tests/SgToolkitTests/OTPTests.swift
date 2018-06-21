@@ -11,6 +11,7 @@ import XCTest
 class OTPTests: XCTestCase {
     
     func testOTPProvider() {
+        //"12345678901234567890" 
         let otp = OTPProvider(secret: "GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ", digits: 6)
         
         XCTAssertEqual("755224", otp.generate(counter: 0))
